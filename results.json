@@ -3,7 +3,7 @@
     "link": "https://colab.research.google.com/drive/1rr6BOdOT27ADygLrz-2i4Thc9u2eCoD4?usp=sharing"
   },
   "test_preprocess": {
-    "vocab_length": 1804
+    "vocab_length": 1803
   },
   "test_build_lm": {
     "english_2_gram_length": 746,
