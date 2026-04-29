@@ -5,13 +5,8 @@
   "test_preprocess": {
     "vocab_length": 1804
   },
-  "test_build_lm": {
-    "english_2_gram_length": 748,
-    "english_3_gram_length": 8235,
-    "french_3_gram_length": 8285,
-    "spanish_3_gram_length": 8468
-  },
-  "test_eval": "FileNotFoundError(2, 'No such file or directory')\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_1484/2957777135.py\", line 48, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_1484/2957777135.py\", line 25, in test_eval\n    'en_on_en': round(eval(lm, 'en', 3), 2),\n                      ^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_1484/3406546968.py\", line 18, in eval\n    with open(file_path, \"r\", encoding=\"utf-8\") as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'data/en/test.txt'\n",
+  "test_build_lm": "UnboundLocalError(\"cannot access local variable 'all_keys' where it is not associated with a value\")\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_1484/2957777135.py\", line 48, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_1484/2957777135.py\", line 16, in test_build_lm\n    'english_2_gram_length': len(build_lm('en', 2, True)),\n                                 ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_1484/3490090249.py\", line 71, in build_lm\n    for sub_token in all_keys:\n                     ^^^^^^^^\nUnboundLocalError: cannot access local variable 'all_keys' where it is not associated with a value\n",
+  "test_eval": "UnboundLocalError(\"cannot access local variable 'english_observed_chars' where it is not associated with a value\")\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_1484/2957777135.py\", line 48, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_1484/2957777135.py\", line 23, in test_eval\n    lm = build_lm('en', 3, True)\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_1484/3490090249.py\", line 62, in build_lm\n    all_keys = english_observed_chars\n               ^^^^^^^^^^^^^^^^^^^^^^\nUnboundLocalError: cannot access local variable 'english_observed_chars' where it is not associated with a value\n",
   "test_generate": {
     "english_2_gram": null,
     "english_3_gram": null,
