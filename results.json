@@ -6,12 +6,12 @@
     "vocab_length": 1804
   },
   "test_build_lm": {
-    "english_2_gram_length": 0,
-    "english_3_gram_length": 0,
-    "french_3_gram_length": 0,
-    "spanish_3_gram_length": 0
+    "english_2_gram_length": 1802,
+    "english_3_gram_length": 19168,
+    "french_3_gram_length": 19168,
+    "spanish_3_gram_length": 19168
   },
-  "test_eval": "FileNotFoundError(2, 'No such file or directory')\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_4867/2957777135.py\", line 48, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_4867/2957777135.py\", line 25, in test_eval\n    'en_on_en': round(eval(lm, 'en', 3), 2),\n                      ^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_4867/3406546968.py\", line 18, in eval\n    with open(file_path, \"r\", encoding=\"utf-8\") as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'data/en/test.txt'\n",
+  "test_eval": "FileNotFoundError(2, 'No such file or directory')\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_20403/2957777135.py\", line 48, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_20403/2957777135.py\", line 25, in test_eval\n    'en_on_en': round(eval(lm, 'en', 3), 2),\n                      ^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_20403/3406546968.py\", line 18, in eval\n    with open(file_path, \"r\", encoding=\"utf-8\") as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'data/en/test.txt'\n",
   "test_generate": {
     "english_2_gram": null,
     "english_3_gram": null,
