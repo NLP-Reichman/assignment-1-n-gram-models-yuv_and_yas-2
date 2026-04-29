@@ -5,7 +5,20 @@
   "test_preprocess": {
     "vocab_length": 1804
   },
-  "test_build_lm": "UnboundLocalError(\"cannot access local variable 'create_lang' where it is not associated with a value\")\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_4867/2957777135.py\", line 48, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_4867/2957777135.py\", line 16, in test_build_lm\n    'english_2_gram_length': len(build_lm('en', 2, True)),\n                                 ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_4867/1854660234.py\", line 12, in build_lm\n    tweets = create_lang(lang)\n             ^^^^^^^^^^^\nUnboundLocalError: cannot access local variable 'create_lang' where it is not associated with a value\n",
-  "test_eval": "UnboundLocalError(\"cannot access local variable 'create_lang' where it is not associated with a value\")\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_4867/2957777135.py\", line 48, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_4867/2957777135.py\", line 23, in test_eval\n    lm = build_lm('en', 3, True)\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_4867/1854660234.py\", line 12, in build_lm\n    tweets = create_lang(lang)\n             ^^^^^^^^^^^\nUnboundLocalError: cannot access local variable 'create_lang' where it is not associated with a value\n",
-  "test_generate": "UnboundLocalError(\"cannot access local variable 'create_lang' where it is not associated with a value\")\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_4867/2957777135.py\", line 48, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_4867/2957777135.py\", line 33, in test_generate\n    'english_2_gram': generate('en', 2, \"I am\", 20, 5),\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_4867/857181076.py\", line 15, in generate\n    model = build_lm(lang, n, False)\n            ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_4867/1854660234.py\", line 12, in build_lm\n    tweets = create_lang(lang)\n             ^^^^^^^^^^^\nUnboundLocalError: cannot access local variable 'create_lang' where it is not associated with a value\n"
+  "test_build_lm": {
+    "english_2_gram_length": 0,
+    "english_3_gram_length": 0,
+    "french_3_gram_length": 0,
+    "spanish_3_gram_length": 0
+  },
+  "test_eval": "FileNotFoundError(2, 'No such file or directory')\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_4867/2957777135.py\", line 48, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_4867/2957777135.py\", line 25, in test_eval\n    'en_on_en': round(eval(lm, 'en', 3), 2),\n                      ^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_4867/3406546968.py\", line 18, in eval\n    with open(file_path, \"r\", encoding=\"utf-8\") as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'data/en/test.txt'\n",
+  "test_generate": {
+    "english_2_gram": null,
+    "english_3_gram": null,
+    "english_4_gram": null,
+    "spanish_2_gram": null,
+    "spanish_3_gram": null,
+    "french_2_gram": null,
+    "french_3_gram": null
+  }
 }
