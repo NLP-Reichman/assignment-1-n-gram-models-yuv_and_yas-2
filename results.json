@@ -3,7 +3,7 @@
     "link": "https://colab.research.google.com/drive/1rr6BOdOT27ADygLrz-2i4Thc9u2eCoD4?usp=sharing"
   },
   "test_preprocess": {
-    "vocab_length": 2
+    "vocab_length": 1804
   },
   "test_build_lm": "UnboundLocalError(\"cannot access local variable 'create_lang' where it is not associated with a value\")\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_4867/2957777135.py\", line 48, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_4867/2957777135.py\", line 16, in test_build_lm\n    'english_2_gram_length': len(build_lm('en', 2, True)),\n                                 ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_4867/1854660234.py\", line 12, in build_lm\n    tweets = create_lang(lang)\n             ^^^^^^^^^^^\nUnboundLocalError: cannot access local variable 'create_lang' where it is not associated with a value\n",
   "test_eval": "UnboundLocalError(\"cannot access local variable 'create_lang' where it is not associated with a value\")\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_4867/2957777135.py\", line 48, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_4867/2957777135.py\", line 23, in test_eval\n    lm = build_lm('en', 3, True)\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_4867/1854660234.py\", line 12, in build_lm\n    tweets = create_lang(lang)\n             ^^^^^^^^^^^\nUnboundLocalError: cannot access local variable 'create_lang' where it is not associated with a value\n",
