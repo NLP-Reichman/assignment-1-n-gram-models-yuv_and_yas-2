@@ -11,7 +11,12 @@
     "french_3_gram_length": 8286,
     "spanish_3_gram_length": 8469
   },
-  "test_eval": "FileNotFoundError(2, 'No such file or directory')\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_1484/2957777135.py\", line 48, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_1484/2957777135.py\", line 25, in test_eval\n    'en_on_en': round(eval(lm, 'en', 3), 2),\n                      ^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_1484/3406546968.py\", line 18, in eval\n    with open(file_path, \"r\", encoding=\"utf-8\") as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'data/en/test.txt'\n",
+  "test_eval": {
+    "en_on_en": 0.01,
+    "en_on_fr": 0.15,
+    "en_on_tl": 0.13,
+    "en_on_nl": 0.15
+  },
   "test_generate": {
     "english_2_gram": null,
     "english_3_gram": null,
