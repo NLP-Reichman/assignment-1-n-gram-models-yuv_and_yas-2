@@ -3,7 +3,7 @@
     "link": "https://drive.google.com/file/d/1HgmHJ5s4lB2jH1hRSFijPdr5cU6S5nD9/view?usp=sharing"
   },
   "test_preprocess": {
-    "vocab_length": 1804
+    "vocab_length": 1803
   },
   "test_build_lm": {
     "english_2_gram_length": 748,
